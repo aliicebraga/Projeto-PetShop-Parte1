@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+  <!--Metadados da página, comum as outras páginas-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moda Animal</title>
+  </head>
+  <body>
+    <br />
+       <!--tag <header> representa o cabeçalho da página, sendo o conteúdo do elemento a tag <img> que puxa pelo atributo src a logo-->
+    <header><img src="logo/logo-320.png" alt="logo da marca bichAninho com o subtítulo aconchego para seu bichinho" title="bichAninho é bicho mais aconchego"></header>
+    <br />
+        <!--tag <nav> indica ser a seção composta por um menu ou uma seção que leva a outras páginas-->
+    <nav>
+      <dl>
+        <dt><b>Home</b></dt>
+        <dd><a href="home.html">Página principal</a></a></dd>
+        <br />
+        <dt></dt> <b>Produtos</b></dt>
+        <dd><a href="products.html">Conheça nossos produtos</a></dd>
+        <br />
+        <dt><b>Entre em contato</b></dt>
+        <dd><a href="contacts.html">Fale Conosco</a></dd>
+      </dl>
+    </nav>
+    <br />
+        <!--tag <main> consiste em um elemento semântico que representa o conteúdo principal da página, 
+        ele é exclusivo e não se repete em outras páginas-->
+    <main>
+      <!--tag <h1> indica o título principal da página e recomenda-que se tenha apenas um por página-->
+      <h1>Damos aconchego ao seu bichinho!</h1>
+      <br>
+      <!--Conjunto de parágrafos para introduzir o conteúdo princial, no caso as compras-->
+      <p>Você pode personalizar seu pedido selecionando o tamanho, a quantidade e escolhendo as cores dos tecidos utilizados nas roupinhas.</p>
+      <br>
+      <p>Após a identificação do pagamento, o pedido é liberado para produção com um de nossos pequenos empreendedores.</p>
+      <br>
+      <p>Confira nossas opções, seu pet merece o melhor:</p>
+      <br>
+      <!--uso da tag <form> para captação da entrada de dados, nesse caso seria a "venda" das roupinhas. o atributo action será preenchido com o valor do local para onde as informações seram processadas. nesse momento nenhum banco de dados será usado-->
+      <form action="" id="carrinho-form">
+        <fieldset>
+          <!--por ainda não ter domínio da tag <section> e do CSS, utilizei a tag <table> para organização dos produtos. dessa maneira, o conteúdo fica mais claro aos consumidores e usuários-->
+          <table>
+            <tr>
+              <th>Cachorro</th>
+              <th>Coelho</th>
+              <th>Gato</th>
+              <th>Roedor</th>
+            </tr>
+            <tr>
+              <td><img src="img/dog-320.jpg" alt="cachorro de roupinha" title="cachorríneo no estilo"></td>
+              <td><img src="img/coelho-320.jpg" alt="coelho de roupinha" title="coelhino no estilo"></td>
+              <td><img src="img/cat-320.jpg" alt="gato de roupinha" title="gatíneo no estilo"></td>
+              <td><img src="img/rato-320.jpg" alt="roedor de roupinha" title="roedorzíneo no estilo"></td>
+            </tr>
+            <tr>
+              <td><b>A partir de R$49,90</b></td>
+              <td><b>A partir de R$49,90</b></td>
+              <td><b>A partir de R$49,90</b></td>
+              <td><b>A partir de R$49,90</b></td>
+            </tr>
+            <tr>
+              <td><i><u>Comprando no mínimo 2 peças <br> o frete é <mark>grátis</mark></u></i></td>
+              <td><i><u>Comprando no mínimo 2 peças <br> o frete é <mark>grátis</mark></u></i></td>
+              <td><i><u>Comprando no mínimo 2 peças <br> o frete é <mark>grátis</mark></u></i></td>
+              <td><i><u>Comprando no mínimo 2 peças <br> o frete é <mark>grátis</mark></u></i></td>
+            </tr>
+            <!--a tag <input> do type radio permite que apenas uma opção seja selecionada-->
+            <tr>
+              <td>
+                <p></p><label for="tamanho-dog">Tamanho do bichAninho:</label></p>
+                <ul>
+                    <li><input type="radio" name="tamanho-dog" id="tamanho-dog-p">
+                    <label for="tamanho-dog-p">Pequeno</label></li>
+                    <li><input type="radio" name="tamanho-dog" id="tamanho-dog-m">
+                    <label for="tamanho-dog-m">Médio</label></li>
+                    <li><input type="radio" name="tamanho-dog" id="tamanho-dog-g">
+                    <label for="tamanho-dog-g">Grande</label></li>
+                </ul>
+              </td>
+              <td>
+                <p><label for="tamanho-coelho">Tamanho do bichAninho:</label></p>
+                <ul>
+                    <li><input type="radio" name="tamanho-coelho" id="tamanho-coelho-p">
+                    <label for="tamanho-coelho-p">Pequeno</label></li>
+                    <li><input type="radio" name="tamanho-coelho" id="tamanho-coelho-m">
+                    <label for="tamanho-coelho-m">Médio</label></li>
+                    <li><input type="radio" name="tamanho-coelho" id="tamanho-coelho-g">
+                    <label for="tamanho-coelho-g">Grande</label></li>
+                </ul>
+              </td>
+              <td>
+                <p><label for="tamanho-cat">Tamanho do bichAninho:</label></p>
+                <ul>
+                    <li><input type="radio" name="tamanho-cat" id="tamanho-cat-p">
+                    <label for="tamanho-cat-p">Pequeno</label></li>
+                    <li><input type="radio" name="tamanho-cat" id="tamanho-cat-m">
+                    <label for="tamanho-cat-m">Médio</label></li>
+                    <li><input type="radio" name="tamanho-cat" id="tamanho-cat-g">
+                    <label for="tamanho-cat-g">Grande</label></li>
+                </ul>
+              </td>
+              <td>
+                <p><label for="tamanho-rato">Tamanho do bichAninho:</label></p>
+                <ul>
+                    <li><input type="radio" name="tamanho-rato" id="tamanho-rato-p">
+                    <label for="tamanho-rato-p">Pequeno</label></li>
+                    <li><input type="radio" name="tamanho-rato" id="tamanho-rato-m">
+                    <label for="tamanho-rato-m">Médio</label></li>
+                    <li><input type="radio" name="tamanho-rato" id="tamanho-rato-g">
+                    <label for="tamanho-rato-g">Grande</label></li>
+                </ul>
+              </td>
+            </tr>
+            <!--a tag <select> seguida da tag <option> faz com que o usuário selecione um dos valores pré-definidos-->
+            <tr>
+              <td>
+                <p>
+                  <label for="quantidade-dog">Quantas roupinhas:</label>
+                  <select name="quantidade-dog" id="quantidade-dog">
+                    <option>Quantidade</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                  </select>
+                </p>
+              </td>
+              <td>
+                <p>
+                  <label for="quantidade-coelho">Quantas roupinhas:</label>
+                  <select name="quantidade-coelho" id="quantidade-coelho">
+                    <option>Quantidade</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                  </select>
+                </p>
+              </td>
+              <td>
+                <p>
+                  <label for="quantidade-cat">Quantas roupinhas:</label>
+                  <select name="quantidade-cat" id="quantidade-cat">
+                    <option>Quantidade</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                  </select>
+                </p>
+              </td>
+              <td>
+                <p>
+                  <label for="quantidade-rato">Quantas roupinhas:</label>
+                  <select name="quantidade-rato" id="quantidade-rato">
+                    <option>Quantidade</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                  </select>
+                </p>
+              </td>
+            </tr>
+            <br>
+            <br>
+            <!--a tag <input> do type checkbox permite que mais de uma opção seja selecionada-->
+            <!--a tag <input> do type color permite que uma opção de cor seja selecionada-->            
+            <tr>
+              <td>
+                <p>
+                  <p>Escolha até 3 cores: </p>
+                  <br>
+                  <input type="checkbox" name="estampa" id="estampa-dog-color-1">
+                  <input type="color" name="estampa" id="estampa-dog-color-escolher-1"><br>
+                  <input type="checkbox" name="estampa" id="estampa-dog-color-2">
+                  <input type="color" name="estampa" id="estampa-dog-color-escolher-2"><br>
+                  <input type="checkbox" name="estampa" id="estampa-dog-color-3">
+                  <input type="color" name="estampa" id="estampa-dog-color-escolher-3"><br>
+                </p>
+              </td>
+              <td>
+                <p>
+                  <p>Escolha até 3 cores: </p>
+                  <br>
+                  <input type="checkbox" name="estampa" id="estampa-coelho-color-1">
+                  <input type="color" name="estampa" id="estampa-coelho-color-escolher-1"><br>
+                  <input type="checkbox" name="estampa" id="estampa-coelho-color-2">
+                  <input type="color" name="estampa" id="estampa-coelho-color-escolher-2"><br>
+                  <input type="checkbox" name="estampa" id="estampa-coelho-color-3">
+                  <input type="color" name="estampa" id="estampa-coelho-color-escolher-3"><br>
+                </p>
+              </td>
+              <td>
+                <p>
+                  <p>Escolha até 3 cores:</p>
+                  <br>
+                  <input type="checkbox" name="estampa" id="estampa-cat-color-1">
+                  <input type="color" name="estampa" id="estampa-cat-color-escolher-1"><br>
+                  <input type="checkbox" name="estampa" id="estampa-cat-color-2">
+                  <input type="color" name="estampa" id="estampa-cat-color-escolher-2"><br>
+                  <input type="checkbox" name="estampa" id="estampa-cat-color-3">
+                  <input type="color" name="estampa" id="estampa-cat-color-escolher-3"><br>
+                </p>
+              </td>
+              <td>
+                 <p>
+                  <p>Escolha até 3 cores: </p>
+                  <br>
+                  <input type="checkbox" name="estampa" id="estampa-rato-color-1">
+                  <input type="color" name="estampa" id="estampa-rato-color-escolher-1"><br>
+                  <input type="checkbox" name="estampa" id="estampa-rato-color-2">
+                  <input type="color" name="estampa" id="estampa-rato-color-escolher-2"><br>
+                  <input type="checkbox" name="estampa" id="estampa-rato-color-3">
+                  <input type="color" name="estampa" id="estampa-rato-color-escolher-3"><br>
+                </p>
+              </td>
+            </tr>
+            <br>
+            <br>
+            <tr>
+              <td colspan="4">
+                <button type="reset" id="botao-limpar-dog">Limpar</button>
+                <button type="submit" id="botao-carrinho-dog">Adicionar ao carrinho</button>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+      </form>
+    </main>
+    <br />
+    <!--tag <footer> indica o rodapé da página e contém informações de contato-->    
+    <footer>
+      <!--tag <fieldset> foi utilizada aqui apenas para "estilização" e divisão do conteúdo-->      
+      <fieldset>
+        <br />
+        <nav>
+          <ul>
+            <p><b>Nos encontre em um dos nossos canais:</b></p>
+            <li>
+              <p><a href="https://www.instagram.com/bichAninho.petshop/" target="blank">Instagram</a></p>
+            </li>
+            <li>
+              <p><a href="https://www.facebook.com/people/BichAninho/100073094148303/" target="blank">Facebook</a></p>
+            </li>
+          </ul>
+        </nav>
+        <br />
+        <!--tag <address> define informações de contato do dono da página e do autor da página-->        
+        <address>
+          <i>bichAninho LTDA</i>/CNPJ:00.123.456/0007-89/ Endereço: Rua dos bobos, 0 - Animais,SA - 88888-999 <br>
+          Encontrou algo errado? 
+          <a href="mailto:webFullStack@domain.com">Contate-nos.</a>
+        </address>
+        <br />
+        <p>&copy; Todos os direitos reservados.</p>
+      </fieldset>
+    </footer>
+  </body>
+</html>
